@@ -1,7 +1,7 @@
 # Learning Dashboard (Android · Kotlin · Jetpack Compose)
 
 **Run:** open in Android Studio (Ladybug+, JDK 17) → run `app`. **APK:** `./gradlew assembleRelease` → `app/build/outputs/apk/release/`. **Tests:** `./gradlew testDebugUnitTest`.
-**Demo login:** any valid email + `password123`. **Offline demo:** load courses → airplane mode → kill & reopen the app.
+**Demo login:** `demo@learning.com` / `password123` (format is validated on-device; credentials by the mock API). **Offline demo:** load courses → airplane mode → kill & reopen the app.
 
 **Stack:** MVVM · Hilt · Coroutines/Flow · Retrofit + OkHttp + kotlinx.serialization · Room · DataStore · Navigation Compose (type-safe routes).
 The "backend" is an OkHttp interceptor (`MockApiInterceptor`) serving `assets/mock/*.json`, so the real network stack runs end-to-end, and it throws an `IOException` when the device is offline, so the offline path is genuine, not simulated.

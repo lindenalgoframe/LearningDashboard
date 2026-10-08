@@ -21,6 +21,7 @@ import java.util.UUID
  * - Serves JSON from `assets/mock/`.
  * - Fails with an IOException when the device has no connectivity, exactly like a real
  *   request would, so the offline path is genuine (turn on airplane mode to see it).
+ * - Accepts a single demo account ([DEMO_EMAIL] / [DEMO_PASSWORD]); anything else is a 401.
  * - Adds latency so loading states are visible.
  *
  * Swapping to a real backend = remove this interceptor and change BASE_URL.
@@ -61,7 +62,9 @@ class MockApiInterceptor(
         val buffer = Buffer()
         request.body?.writeTo(buffer)
         val body = json.decodeFromString(LoginRequest.serializer(), buffer.readUtf8())
-        return if (body.password == DEMO_PASSWORD) {
+        val validCredentials = body.email.trim().equals(DEMO_EMAIL, ignoreCase = true) &&
+            body.password == DEMO_PASSWORD
+        return if (validCredentials) {
             200 to json.encodeToString(LoginResponse.serializer(), LoginResponse(token = "mock-${UUID.randomUUID()}"))
         } else {
             401 to error("Invalid credentials")
@@ -80,6 +83,7 @@ class MockApiInterceptor(
 
     companion object {
         const val BASE_URL = "https://api.learning.mock/"
+        const val DEMO_EMAIL = "demo@learning.com"
         const val DEMO_PASSWORD = "password123"
         private val COURSE_DETAIL = Regex("^/courses/\\d+$")
         private val JSON_MEDIA_TYPE = "application/json".toMediaType()

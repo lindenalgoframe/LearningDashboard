@@ -14,7 +14,7 @@
     <string name="login_show">Show</string>
     <string name="login_hide">Hide</string>
     <string name="login_button">Log in</string>
-    <string name="login_demo_hint">Demo: any valid email + password123</string>
+    <string name="login_demo_hint">Demo: demo@learning.com / password123</string>
     <string name="validation_email_blank">Email is required</string>
     <string name="validation_email_invalid">Enter a valid email address</string>
     <string name="validation_password_blank">Password is required</string>
