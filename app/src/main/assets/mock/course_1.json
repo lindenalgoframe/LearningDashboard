@@ -1,0 +1,107 @@
+{
+  "id": 1,
+  "title": "Python Programming",
+  "instructor": "John Smith",
+  "lessons": [
+    {
+      "id": 101,
+      "title": "Introduction",
+      "completed": true
+    },
+    {
+      "id": 102,
+      "title": "Variables & Data Types",
+      "completed": true
+    },
+    {
+      "id": 103,
+      "title": "Operators & Expressions",
+      "completed": true
+    },
+    {
+      "id": 104,
+      "title": "Strings",
+      "completed": true
+    },
+    {
+      "id": 105,
+      "title": "Lists",
+      "completed": true
+    },
+    {
+      "id": 106,
+      "title": "Tuples & Sets",
+      "completed": true
+    },
+    {
+      "id": 107,
+      "title": "Dictionaries",
+      "completed": true
+    },
+    {
+      "id": 108,
+      "title": "Control Flow",
+      "completed": true
+    },
+    {
+      "id": 109,
+      "title": "Loops",
+      "completed": true
+    },
+    {
+      "id": 110,
+      "title": "Functions",
+      "completed": true
+    },
+    {
+      "id": 111,
+      "title": "Modules & Packages",
+      "completed": true
+    },
+    {
+      "id": 112,
+      "title": "File I/O",
+      "completed": true
+    },
+    {
+      "id": 113,
+      "title": "Error Handling",
+      "completed": true
+    },
+    {
+      "id": 114,
+      "title": "OOP",
+      "completed": false
+    },
+    {
+      "id": 115,
+      "title": "Inheritance & Polymorphism",
+      "completed": false
+    },
+    {
+      "id": 116,
+      "title": "Iterators & Generators",
+      "completed": false
+    },
+    {
+      "id": 117,
+      "title": "Decorators",
+      "completed": false
+    },
+    {
+      "id": 118,
+      "title": "Testing with pytest",
+      "completed": false
+    },
+    {
+      "id": 119,
+      "title": "Virtual Environments",
+      "completed": false
+    },
+    {
+      "id": 120,
+      "title": "Final Project",
+      "completed": false
+    }
+  ]
+}

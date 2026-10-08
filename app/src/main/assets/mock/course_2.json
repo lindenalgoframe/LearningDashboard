@@ -1,0 +1,87 @@
+{
+  "id": 2,
+  "title": "Generative AI",
+  "instructor": "Sarah Williams",
+  "lessons": [
+    {
+      "id": 201,
+      "title": "What is Generative AI?",
+      "completed": true
+    },
+    {
+      "id": 202,
+      "title": "Neural Network Basics",
+      "completed": true
+    },
+    {
+      "id": 203,
+      "title": "Transformers",
+      "completed": true
+    },
+    {
+      "id": 204,
+      "title": "Tokenization",
+      "completed": true
+    },
+    {
+      "id": 205,
+      "title": "Large Language Models",
+      "completed": true
+    },
+    {
+      "id": 206,
+      "title": "Prompt Engineering",
+      "completed": true
+    },
+    {
+      "id": 207,
+      "title": "Embeddings",
+      "completed": false
+    },
+    {
+      "id": 208,
+      "title": "Retrieval-Augmented Generation",
+      "completed": false
+    },
+    {
+      "id": 209,
+      "title": "Fine-tuning",
+      "completed": false
+    },
+    {
+      "id": 210,
+      "title": "Evaluation",
+      "completed": false
+    },
+    {
+      "id": 211,
+      "title": "Image Generation",
+      "completed": false
+    },
+    {
+      "id": 212,
+      "title": "Multimodal Models",
+      "completed": false
+    },
+    {
+      "id": 213,
+      "title": "Agents & Tool Use",
+      "completed": false
+    },
+    {
+      "id": 214,
+      "title": "Safety & Alignment",
+      "completed": false
+    },
+    {
+      "id": 215,
+      "title": "Deploying Models",
+      "completed": false
+    },
+    {
+      "id": 216,
+      "title": "Capstone Project",
+      "completed": false
+    }
+  ]
+}
