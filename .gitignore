@@ -11,3 +11,8 @@
 .cxx/
 *.apk
 *.aab
+
+# Submission artifacts are committed on purpose
+!submission/*.apk
+# Raw screen recordings (converted copy lives in submission/)
+*.webm

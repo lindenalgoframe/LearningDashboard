@@ -1,6 +1,7 @@
 # Learning Dashboard (Android · Kotlin · Jetpack Compose)
 
 **Run:** open in Android Studio (Ladybug+, JDK 17) → run `app`. **APK:** `./gradlew assembleRelease` → `app/build/outputs/apk/release/`. **Tests:** `./gradlew testDebugUnitTest`.
+**Submission:** APK at [`submission/LearningDashboard.apk`](submission/LearningDashboard.apk) · demo video (1:22) at [`submission/demo.mp4`](submission/demo.mp4).
 **Demo login:** `demo@learning.com` / `password123` (format is validated on-device; credentials by the mock API). **Offline demo:** load courses → airplane mode → kill & reopen the app.
 
 **Stack:** MVVM · Hilt · Coroutines/Flow · Retrofit + OkHttp + kotlinx.serialization · Room · DataStore · Navigation Compose (type-safe routes).
