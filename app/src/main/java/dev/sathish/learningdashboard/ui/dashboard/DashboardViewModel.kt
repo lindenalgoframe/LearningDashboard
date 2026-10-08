@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dev.sathish.learningdashboard.domain.DataError
 import dev.sathish.learningdashboard.domain.DataResult
+import dev.sathish.learningdashboard.domain.ProgressCalculator
 import dev.sathish.learningdashboard.domain.model.Course
 import dev.sathish.learningdashboard.domain.repository.AuthRepository
 import dev.sathish.learningdashboard.domain.repository.CourseRepository
@@ -17,6 +18,7 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlin.math.roundToInt
 
 sealed interface DashboardUiState {
     data object Loading : DashboardUiState
@@ -27,7 +29,12 @@ sealed interface DashboardUiState {
         val isRefreshing: Boolean,
         /** Non-null when showing cached data because the latest refresh failed. */
         val staleReason: DataError?,
-    ) : DashboardUiState
+    ) : DashboardUiState {
+        val totalLessons: Int get() = courses.sumOf { it.lessonCount }
+        val completedLessons: Int
+            get() = courses.sumOf { (it.lessonCount * it.progressPercent / 100.0).roundToInt() }
+        val overallProgress: Int get() = ProgressCalculator.percent(completedLessons, totalLessons)
+    }
 }
 
 @HiltViewModel

@@ -2,11 +2,17 @@
 <resources>
     <string name="app_name">Learning Dashboard</string>
 
+    <!-- Shared -->
+    <string name="percent_value">%1$d%%</string>
+    <string name="stat_fraction">%1$d/%2$d</string>
+
     <!-- Login -->
     <string name="login_title">Welcome back</string>
-    <string name="login_subtitle">Log in to continue learning</string>
+    <string name="login_subtitle">Log in to pick up where you left off</string>
     <string name="login_email">Email</string>
     <string name="login_password">Password</string>
+    <string name="login_show">Show</string>
+    <string name="login_hide">Hide</string>
     <string name="login_button">Log in</string>
     <string name="login_demo_hint">Demo: any valid email + password123</string>
     <string name="validation_email_blank">Email is required</string>
@@ -15,10 +21,17 @@
     <string name="validation_password_short">Password must be at least 6 characters</string>
 
     <!-- Dashboard -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
     <string name="dashboard_title">My Courses</string>
     <string name="logout">Log out</string>
+    <string name="overall_progress">Overall progress</string>
+    <string name="stat_lessons_done">Lessons done</string>
+    <string name="section_your_courses">Continue learning</string>
     <string name="course_instructor">by %1$s</string>
-    <string name="course_progress">%1$d%% complete</string>
+    <string name="course_byline">%1$s · %2$s</string>
+    <string name="complete_suffix">complete</string>
     <string name="course_continue">Continue</string>
     <string name="empty_title">No courses yet</string>
     <string name="empty_message">Courses you enrol in will appear here.</string>
@@ -28,10 +41,12 @@
 
     <!-- Course detail -->
     <string name="back">Back</string>
+    <string name="course_label">COURSE</string>
+    <string name="lessons_header">Lessons</string>
     <string name="lessons_completed">%1$d of %2$d lessons completed</string>
-    <string name="lesson_completed">✓ Completed</string>
-    <string name="lesson_pending">○ Pending</string>
-    <string name="lesson_mark_complete">Mark complete</string>
+    <string name="lesson_completed">Completed</string>
+    <string name="lesson_pending">Pending</string>
+    <string name="lesson_mark_complete">Mark done</string>
 
     <!-- Errors -->
     <string name="error_title">Something went wrong</string>
@@ -45,5 +60,9 @@
     <plurals name="lesson_count">
         <item quantity="one">%d lesson</item>
         <item quantity="other">%d lessons</item>
+    </plurals>
+    <plurals name="stat_courses">
+        <item quantity="one">Course</item>
+        <item quantity="other">Courses</item>
     </plurals>
 </resources>
